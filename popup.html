@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Better-Translator</title>
+    <style>
+      body {
+        min-width: 300px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <!--<script src="popup.js"></script> -->
+  </head>
+  <body>
+    <form action="">
+      Text to translate: <input type="text" name="sentence" size="25">
+      From: <select name="sl">
+        <option value="Korean">Korean</option>
+        <option value="English">English</option>
+      </select>
+      To: <select name="tl">
+        <option value="English">English</option>
+        <option value="Korean">Korean</option>
+      </select>
+      <input type="submit" value="Translate!">
+    </form>
+
+  </body>
+</html>
+
