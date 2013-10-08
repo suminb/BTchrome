@@ -1,10 +1,11 @@
 
 function translateURL(){
+    alert("hello");
     chrome.tabs.create({url: "http://Better-Translator.com"})
 }
 
-translateURL: function(){
-    chrome.tabs.create({url: "http://Better-Translator.com"})
-}
 
-document.getElementById("submit").onclick=function(){translateURL()};
+document.addEventListener('DOMContentLoaded', function () {
+    chrome.tabs.create({url: "http://Better-Translator.com"})
+
+});
